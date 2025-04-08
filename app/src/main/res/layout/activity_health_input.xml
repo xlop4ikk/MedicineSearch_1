@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Категория"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите возраст"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите вес (кг)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/et_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите рост (см)"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender_options" />
+
+        <EditText
+            android:id="@+id/et_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите давление (120/80)"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите уровень сахара (ммоль/л)"
+            android:inputType="numberDecimal"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_cholesterol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите уровень холестерина (ммоль/л)"
+            android:inputType="numberDecimal"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите пульс (уд/мин)"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить данные"
+            android:backgroundTint="#e2a600"
+            android:textColor="#5e4602"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:backgroundTint="#e2a600"
+            android:textColor="#5e4602"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_recommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:visibility="gone"
+            android:paddingTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MedicineSearch</string>
+    <string name="ai">🤖 AI Помощник</string>
+    <string name="helper">Helper</string>
+    <string name="open_drawer">Открыть меню</string>
+    <string name="close_drawer">Закрыть меню</string>
+</resources>

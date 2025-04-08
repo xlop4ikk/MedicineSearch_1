@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#201E28"
+    android:paddingTop="72dp"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- Поле поиска -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxBackgroundColor="#2A2833"
+        app:hintTextColor="@color/yellow"
+        app:boxStrokeColor="@color/yellow">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Поиск лекарств..."
+            android:iconifiedByDefault="false"
+            app:searchHintIcon="@null"
+            app:queryBackground="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Список результатов -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:overScrollMode="never" />
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201E28"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите лекарство:"
+            android:textColor="#fdfdfd"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Поисковая строка -->
+        <SearchView
+            android:id="@+id/search_drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Поиск лекарства..." />
+
+        <!-- Список лекарств -->
+        <ListView
+            android:id="@+id/list_drugs"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+
+        <!-- Выбранное лекарство -->
+        <TextView
+            android:id="@+id/tv_selected_drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="#fdfdfd"
+            android:text="Выбранное лекарство: Не выбрано"/>
+
+        <!-- Поля ввода возраста, веса, роста -->
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Возраст (лет)"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/et_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вес (кг)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/et_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Рост (см)"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пол:"
+            android:textSize="16sp"
+            android:textColor="#e2a600"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinner_sex"
+            android:layout_width="match_parent"
+            android:textColor="#201E28"
+            android:popupBackground= "#e2a600"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cb_pregnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fdfdfd"
+            android:text="Беременность"/>
+
+        <Button
+            android:id="@+id/btn_select_diseases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбрать хронические заболевания"/>
+        <TextView
+            android:id="@+id/tv_selected_diseases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбраны: Нет"
+            android:textColor="#fdfdfd"
+            android:textSize="14sp"/>
+
+
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать дозировку"/>
+
+        <TextView
+            android:id="@+id/tv_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:padding="8dp"
+            android:textColor="#fdfdfd"
+            android:text="Инструкция по применению:"/>
+
+        <TextView
+            android:id="@+id/tv_dosage_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="#fdfdfd"
+            android:text="Дозировка:"/>
+
+    </LinearLayout>
+</ScrollView>

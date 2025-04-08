@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="exp_list_diseases" type="id" />
+    <item name="spinner_drug" type="id" />
+    <item name="drawer_layout" type="id" />
+</resources>
